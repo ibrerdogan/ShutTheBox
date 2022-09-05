@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F4A800628C5FA8B0049E3EC /* EndGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A800528C5FA8B0049E3EC /* EndGameView.swift */; };
 		7F75732128C124FF00B2EB2B /* ShutTheBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F75732028C124FF00B2EB2B /* ShutTheBoxApp.swift */; };
 		7F75732328C124FF00B2EB2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F75732228C124FF00B2EB2B /* ContentView.swift */; };
 		7F75732528C1250300B2EB2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F75732428C1250300B2EB2B /* Assets.xcassets */; };
 		7F75732828C1250300B2EB2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F75732728C1250300B2EB2B /* Preview Assets.xcassets */; };
+		7FEC221628C32F8900629B47 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC221528C32F8900629B47 /* PlayerView.swift */; };
+		7FEC221828C333C900629B47 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC221728C333C900629B47 /* GameView.swift */; };
+		7FFFD78F28C24D04007DE842 /* StoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFFD78E28C24D04007DE842 /* StoneView.swift */; };
+		7FFFD79128C24D45007DE842 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFFD79028C24D45007DE842 /* DiceView.swift */; };
+		7FFFD79428C24EC1007DE842 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFFD79328C24EC1007DE842 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F4A800528C5FA8B0049E3EC /* EndGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameView.swift; sourceTree = "<group>"; };
 		7F75731D28C124FF00B2EB2B /* ShutTheBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShutTheBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F75732028C124FF00B2EB2B /* ShutTheBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShutTheBoxApp.swift; sourceTree = "<group>"; };
 		7F75732228C124FF00B2EB2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F75732428C1250300B2EB2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F75732728C1250300B2EB2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7FEC221528C32F8900629B47 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		7FEC221728C333C900629B47 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		7FFFD78E28C24D04007DE842 /* StoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoneView.swift; sourceTree = "<group>"; };
+		7FFFD79028C24D45007DE842 /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
+		7FFFD79328C24EC1007DE842 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,8 @@
 		7F75731F28C124FF00B2EB2B /* ShutTheBox */ = {
 			isa = PBXGroup;
 			children = (
+				7FFFD79228C24E5E007DE842 /* Extensions */,
+				7FFFD78D28C24C82007DE842 /* Views */,
 				7F75732028C124FF00B2EB2B /* ShutTheBoxApp.swift */,
 				7F75732228C124FF00B2EB2B /* ContentView.swift */,
 				7F75732428C1250300B2EB2B /* Assets.xcassets */,
@@ -65,6 +79,26 @@
 				7F75732728C1250300B2EB2B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7FFFD78D28C24C82007DE842 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7FFFD78E28C24D04007DE842 /* StoneView.swift */,
+				7FFFD79028C24D45007DE842 /* DiceView.swift */,
+				7FEC221528C32F8900629B47 /* PlayerView.swift */,
+				7FEC221728C333C900629B47 /* GameView.swift */,
+				7F4A800528C5FA8B0049E3EC /* EndGameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7FFFD79228C24E5E007DE842 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7FFFD79328C24EC1007DE842 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4A800628C5FA8B0049E3EC /* EndGameView.swift in Sources */,
+				7FFFD79428C24EC1007DE842 /* Extensions.swift in Sources */,
 				7F75732328C124FF00B2EB2B /* ContentView.swift in Sources */,
+				7FFFD79128C24D45007DE842 /* DiceView.swift in Sources */,
+				7FEC221628C32F8900629B47 /* PlayerView.swift in Sources */,
+				7FFFD78F28C24D04007DE842 /* StoneView.swift in Sources */,
 				7F75732128C124FF00B2EB2B /* ShutTheBoxApp.swift in Sources */,
+				7FEC221828C333C900629B47 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +313,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +343,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
