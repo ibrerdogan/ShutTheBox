@@ -49,6 +49,7 @@ struct DiceModifier : ViewModifier{
             .frame(maxWidth:60,maxHeight: 60)
             .foregroundColor(.white)
             .border(.black)
+            .shadow(color: .black, radius: 10, x: 2, y: 1)
     }
 }
 

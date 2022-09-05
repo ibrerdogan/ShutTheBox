@@ -34,6 +34,7 @@ struct GameView: View {
     @State var endGame : Bool = false
     @State var winner : String = ""
     @State var winnerScore : Int = 0
+    var manager = SoundManager()
     var body: some View {
         ZStack{
             Image("backgroundImage")
@@ -75,6 +76,7 @@ struct GameView: View {
                             Button {
                                 lastValue = 0
                                 RollDices()
+                                manager.playMusic(sound: .hit)
                                 IncreaseLastValue()
                             } label: {
                                 Text("Roll")
@@ -103,6 +105,7 @@ struct GameView: View {
                                    }
                                    if playerScore > 100 || player2Score > 100
                                    {
+                                       
                                        if playerScore > 100
                                        {
                                            winner = "Player 2"
@@ -113,8 +116,14 @@ struct GameView: View {
                                            winner = "Player 1"
                                            winnerScore = playerScore
                                        }
+                                       manager.playMusic(sound: .tada)
                                        endGame.toggle()
                                    }
+                                   else
+                                   {
+                                       manager.playMusic(sound: .boing)
+                                   }
+                                  
                                    lastValue = 45
                                    totalValue = 0
                                    switchPlayer.toggle()

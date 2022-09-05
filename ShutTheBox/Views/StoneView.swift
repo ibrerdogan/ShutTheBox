@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct StoneView: View {
     
@@ -16,6 +17,8 @@ struct StoneView: View {
     @Binding var isClicked : Bool
     @State var borderColor = Color.black
     @Binding var reset : Bool
+    var manager = SoundManager()
+    
     var body: some View{
         VStack{
             if isClicked
@@ -36,6 +39,7 @@ struct StoneView: View {
         .StoneNumberBackgroundModifier(color: borderColor)
         .rotation3DEffect(Angle.degrees(degree), axis: (x: 1  , y: 0, z: 0))
         .onTapGesture {
+            manager.playMusic(sound: .click)
             if isClicked{
                 let lastvalue = value - stoneValue
                 if lastvalue >= 0
@@ -65,7 +69,7 @@ struct StoneView: View {
         }
         
         
-        
     }
+    
 }
 
