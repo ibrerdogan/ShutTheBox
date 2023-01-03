@@ -84,11 +84,11 @@
 		7F75731F28C124FF00B2EB2B /* ShutTheBox */ = {
 			isa = PBXGroup;
 			children = (
+				7F75732228C124FF00B2EB2B /* ContentView.swift */,
 				7F4A800728C635220049E3EC /* Sounds */,
 				7FFFD79228C24E5E007DE842 /* Extensions */,
 				7FFFD78D28C24C82007DE842 /* Views */,
 				7F75732028C124FF00B2EB2B /* ShutTheBoxApp.swift */,
-				7F75732228C124FF00B2EB2B /* ContentView.swift */,
 				7F75732428C1250300B2EB2B /* Assets.xcassets */,
 				7F75732628C1250300B2EB2B /* Preview Content */,
 			);
